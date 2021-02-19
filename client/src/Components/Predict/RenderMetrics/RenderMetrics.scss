@@ -1,0 +1,56 @@
+.predictions__render-metrics {
+  width: 520px;
+  background: white;
+  .metrics__title {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    color: #14235C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+  }
+  .metrics__item {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    & > * {
+      color: #14235C;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding-left: 5px;
+      align-items: center;
+    }
+    .item__key {
+      font-size: 2rem;
+    }
+    .item__value {
+      font-size: 2rem;
+    }
+  }
+  .metrics__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    button {
+      background: #14235C;
+      color: white;
+      padding: 1% 3%;
+      font-size: 1.4rem;
+      &:focus {
+        outline: none;
+      }
+      &.active {
+        background: white;
+        color: #14235C;
+        border: #14235C solid 1px;
+      }
+    }
+  }
+}

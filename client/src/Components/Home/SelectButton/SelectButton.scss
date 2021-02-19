@@ -1,0 +1,12 @@
+.select__button {
+  width: 8%;
+  font-size: 1.6rem;
+  margin: 0.5%;
+  padding: 0.5% 1%;
+  min-width: 120px;
+  cursor: grab;
+  &.active {
+    background: lighten(#14235C, 20%);
+    color: white;
+  }
+}

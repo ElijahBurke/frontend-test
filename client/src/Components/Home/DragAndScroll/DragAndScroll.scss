@@ -1,0 +1,20 @@
+.drag-scroll__container {
+  position: relative;
+  width: 80%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  cursor: grab;
+  transition: 0.2s all ease;
+  &.active {
+    transform: scale(1.05);
+    & > * {
+      cursor: grabbing;
+    }
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

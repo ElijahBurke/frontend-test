@@ -1,0 +1,13 @@
+.section__predictions {
+  .predictions__title {
+    margin: 1%;
+    font-size: 2rem;
+  }
+  .predictions__stats {
+    display: flex;
+    margin-top: 2%;
+    & > * {
+      margin: 0% 2%
+    }
+  }
+}
